@@ -1,3 +1,18 @@
 {
-    "notes": []
+  "notes": [
+    {
+      "content": "Create a todo cli",
+      "tags": [
+        "devs,learning"
+      ],
+      "id": 1747648437574
+    },
+    {
+      "content": "Create a todo cli",
+      "tags": [
+        "devs,learning"
+      ],
+      "id": 1747648485005
+    }
+  ]
 }
