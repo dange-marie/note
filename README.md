@@ -52,13 +52,19 @@ node index.js new "Learn Jest" --tags "js,test"
 
 ```
 note/
-├── index.js           # CLI entry point
-├── src/
-│   └── note.js        # Logic to manage notes (add, find, remove)
-├── __tests__/
-│   └── note.test.js   # Unit tests with Jest
+├── index.js             # CLI entry point
+├── jest.config.js       # Jest configuration for ESM
 ├── package.json
-└── README.md
+├── package-lock.json
+├── README.md
+├── node_modules/        # Installed dependencies (auto-generated)
+├── data/
+│   └── db.json          # JSON file acting as local storage
+├── src/
+│   ├── db.js            # Low-level DB operations
+│   └── note.js          # Logic to manage notes (add, find, remove)
+├── __tests__/
+│   └── note.test.mjs    # Unit tests with Jest using ESM
 ```
 
 ---
