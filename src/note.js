@@ -1,6 +1,6 @@
 import { getDB, insertDB, saveDB } from "./db";
 
-const addNote = async (data, tags) => {
+export const addNote = async (data, tags) => {
     const note = {
         content: data,
         tags: tags,
@@ -10,17 +10,17 @@ const addNote = async (data, tags) => {
     return note
 }
 
-const getAllNotes = async () => {
+export const getAllNotes = async () => {
     const db = await getDB()
     return db.notes
 }
 
-const findNotes = async (filter) => {
+export const findNotes = async (filter) => {
     const { notes } = await getDB()
     return notes.filter(note => note.content.toLowerCase().includes(filter.toLowerCase()))
 }
 
-const removeNote = async (id) => {
+export const removeNote = async (id) => {
     const { notes } = await getDB()
     const match = notes.find(note => note.id === id)
     if (match) {
@@ -31,7 +31,7 @@ const removeNote = async (id) => {
     return -1
 }
 
-const removeAllNotes = async () => {
+export const removeAllNotes = async () => {
     await saveDB({notes: []})
 }
 
