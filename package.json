@@ -1,0 +1,26 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "A basic note app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "note": "./index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dange-marie/note.git"
+  },
+  "author": "dange-marie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dange-marie/note/issues"
+  },
+  "homepage": "https://github.com/dange-marie/note#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
